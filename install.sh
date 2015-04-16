@@ -5,10 +5,10 @@ command -v php >/dev/null 2>&1 || { echo >&2 "Can't find php (cli)). Aborting"; 
 command -v composer >/dev/null 2>&1 || { echo >&2 "Can't find composer. Aborting"; exit 1; }
 
 if [[ "$1" != "https" ]]; then
-    PLUGIN_PODCAST_URL="git@github.com:cosmicradiotv/podcast-plugin.git"
+	PLUGIN_PODCAST_URL="git@github.com:cosmicradiotv/podcast-plugin.git"
 	THEME_URL="git@github.com:cosmicradiotv/u62.git"
 else
-    PLUGIN_PODCAST_URL="https://github.com/cosmicradiotv/podcast-plugin.git"
+	PLUGIN_PODCAST_URL="https://github.com/cosmicradiotv/podcast-plugin.git"
 	THEME_URL="https://github.com/cosmicradiotv/u62.git"
 fi
 
